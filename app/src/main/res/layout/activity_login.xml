@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/jbl"
+    tools:context=".Views.LoginActivity">
+
+    <!-- Glassmorphism effect background -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/glass_background"> <!-- Apply the glassmorphism effect to the linear layout -->
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edttext_background"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="12dp"
+            android:drawableTint="#FFFF"
+            android:textColorHint="#FFFF"
+            android:inputType="textPersonName"
+            android:hint="username" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="password"
+            android:textColorHint="#FFFF"
+            android:padding="10dp"
+            android:background="@drawable/edttext_background"
+            android:drawableLeft="@drawable/ic_baseline_password_24"
+            android:drawablePadding="12dp"
+            android:drawableTint="#FFFF"
+
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/btn_style"
+            android:clickable="true"
+            android:text="LOGIN"
+            android:textColor="#FFFF"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
