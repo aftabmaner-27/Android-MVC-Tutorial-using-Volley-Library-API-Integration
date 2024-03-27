@@ -69,10 +69,6 @@ public class LoginActivity extends AppCompatActivity {
                             startActivity(i);
                             finish();
 
-
-
-
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                             Toast.makeText(LoginActivity.this, ""+e, Toast.LENGTH_SHORT).show();
